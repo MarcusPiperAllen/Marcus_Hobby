@@ -1,49 +1,91 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background: #001f3f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: #0074D9;
-    padding: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #FFDC00;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: #001f3f;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Slightly lighter background for a modern feel */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Better readability */
+  display: flex;
+  flex-direction: column; /* Ensure proper layout */
+  min-height: 100vh; /* Stretch body to full viewport height */
+}
+
+header {
+  background: #336699; /* Lighter blue for better text contrast */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #0056b3; /* Slightly darker blue */
+  padding: 15px;
+  border-radius: 5px; /* Soft corners */
+}
+
+nav ul li {
+  margin: 0 15px; /* Increase spacing for better layout */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #FFD700; /* Gold color for hover effect */
+}
+
+main {
+  padding: 20px;
+  max-width: 800px; /* Restrict content width for better readability */
+  margin: auto; /* Center content */
+  flex: 1; /* Ensure the main content expands flexibly */
+}
+
+section {
+  margin-bottom: 30px; /* Add spacing between sections */
+}
+
+img {
+  display: block; /* Center images */
+  margin: 20px auto;
+  border: 2px solid #ddd; /* Add a subtle border */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #336699; /* Match header background */
+  color: white;
+  margin-top: auto; /* Push footer to the bottom of the page */
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Footer shadow for elegance */
+}
+
+h1, h2 {
+  color: #333; /* Dark text for headlines */
+}
+
+/* Embedded Videos Styling */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px; /* Subtle corners for embedded videos */
+}
+
+a {
+  color: #0056b3; /* Make links a darker blue for visibility */
+}
+
+a:hover {
+  color: #FF4500; /* Bright orange for hover effect */
+  text-decoration: underline;
+}
