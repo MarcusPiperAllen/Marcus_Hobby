@@ -1,91 +1,114 @@
-/* General Styles */
+/* style.css */
+/* --- General Styles --- */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Slightly lighter background for a modern feel */
-  margin: 0;
-  padding: 0;
-  line-height: 1.6; /* Better readability */
-  display: flex;
-  flex-direction: column; /* Ensure proper layout */
-  min-height: 100vh; /* Stretch body to full viewport height */
+  background-color: #f4f4f4;
+  margin: 0; padding: 0;
+  line-height: 1.6;
+  display: flex; flex-direction: column;
+  min-height: 100vh;
 }
 
+/* --- Header & Nav --- */
 header {
-  background: #336699; /* Lighter blue for better text contrast */
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  background: #336699; color: #fff;
+  padding: 20px; text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
-
+.top-banner {
+  background-color: #FFD700; height: 4px; width: 100%;
+}
 nav ul {
-  list-style: none;
-  display: flex;
+  list-style: none; display: flex;
   justify-content: center;
-  background-color: #0056b3; /* Slightly darker blue */
-  padding: 15px;
-  border-radius: 5px; /* Soft corners */
+  background-color: #0056b3; padding: 15px;
+  border-radius: 5px; margin: 0;
 }
-
-nav ul li {
-  margin: 0 15px; /* Increase spacing for better layout */
-}
-
+nav ul li { margin: 0 15px; }
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s; /* Smooth color transition */
+  color: #fff; text-decoration: none; font-weight: bold;
+  transition: color 0.3s;
 }
+nav ul li a:hover { color: #FFD700; }
 
-nav ul li a:hover {
-  color: #FFD700; /* Gold color for hover effect */
+/* --- Hero Banner --- */
+.hero img {
+  width: 100%; max-height: 300px;
+  object-fit: cover; display: block;
 }
+section.hero { margin-top: 0; }
 
+/* --- Main & Sections --- */
 main {
-  padding: 20px;
-  max-width: 800px; /* Restrict content width for better readability */
-  margin: auto; /* Center content */
-  flex: 1; /* Ensure the main content expands flexibly */
+  padding: 20px; max-width: 800px;
+  margin: auto; flex: 1;
+}
+section { margin: 0 0 30px; }
+
+/* --- Photo Card --- */
+.photo-section {
+  background: #e8f4ff; padding: 30px;
+  border-radius: 8px;
+}
+.gym-photo {
+  background: #fff; display: inline-block;
+  padding: 10px; border: 2px solid #ddd;
+  border-radius: 10px; margin-top: 15px;
+}
+.gym-photo img {
+  display: block; width: 100%; border-radius: 5px;
+}
+.gym-photo figcaption {
+  text-align: center; font-size: .9em; color: #666;
+  margin-top: 8px;
 }
 
-section {
-  margin-bottom: 30px; /* Add spacing between sections */
+/* --- Links Card --- */
+.links-section {
+  background: #f0f8ff; padding: 20px;
+  border-radius: 8px;
+}
+.links-section ul {
+  list-style: disc inside; margin: 0; padding: 0;
+}
+.links-section li { margin: 8px 0; }
+.links-section a {
+  color: #0056b3; font-weight: bold;
 }
 
-img {
-  display: block; /* Center images */
-  margin: 20px auto;
-  border: 2px solid #ddd; /* Add a subtle border */
-  border-radius: 10px; /* Rounded corners for images */
+/* --- Media Sections --- */
+.media-section {
+  background: #f0f8ff; padding: 30px;
+  border-radius: 8px; margin-bottom: 30px;
+}
+.video-gallery, .image-gallery {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 20px;
+}
+.video-gallery iframe {
+  width: 100%; max-width: 360px;
+  aspect-ratio: 16/9; border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.image-gallery img {
+  width: 100%; max-width: 300px;
+  border: 2px solid #ddd; border-radius: 10px;
 }
 
+/* --- Footer & Accent --- */
+.footer-banner {
+  background-color: #FFD700; height: 4px; width: 100%;
+}
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #336699; /* Match header background */
-  color: white;
-  margin-top: auto; /* Push footer to the bottom of the page */
-  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Footer shadow for elegance */
+  text-align: center; padding: 15px;
+  background: #336699; color: #fff;
+  margin-top: auto;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
+  border-top: 4px solid #FFD700;
 }
 
-h1, h2 {
-  color: #333; /* Dark text for headlines */
-}
-
-/* Embedded Videos Styling */
-iframe {
-  display: block;
-  margin: 20px auto;
-  border: none;
-  border-radius: 5px; /* Subtle corners for embedded videos */
-}
-
-a {
-  color: #0056b3; /* Make links a darker blue for visibility */
-}
-
-a:hover {
-  color: #FF4500; /* Bright orange for hover effect */
-  text-decoration: underline;
-}
+/* --- Typography & Links --- */
+h1, h2 { color: #333; }
+p, ul { color: #444; }
+a { color: #0056b3; }
+a:hover { color: #ff4500; text-decoration: underline; }

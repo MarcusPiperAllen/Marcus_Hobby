@@ -1,19 +1,22 @@
+<!-- page2.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multimedia - Marcus's Hobby</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcus's Hobby – Multimedia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
+
+  <!-- Header -->
   <header>
     <h1>Multimedia Showcase</h1>
     <p>Watch and explore amazing content related to fitness and healthy eating!</p>
   </header>
+  <div class="top-banner"></div>
 
-  <!-- Navigation Menu -->
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -24,31 +27,28 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Featured Videos -->
-    <section>
+    <section class="media-section">
       <h2>Beginner Workout Videos</h2>
-      <div>
-        <!-- Embed First YouTube Video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IT94xC35u6k" title="20-Minute Beginner Workout" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div>
-        <!-- Embed Second YouTube Video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GS_z6FG_jqE" title="15-Minute Beginner Workout" frameborder="0" allowfullscreen></iframe>
+      <div class="video-gallery">
+        <iframe src="https://www.youtube.com/embed/IT94xC35u6k" title="20-Minute Beginner Workout" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/GS_z6FG_jqE" title="15-Minute Beginner Workout" allowfullscreen></iframe>
       </div>
     </section>
-
-    <!-- Image Gallery -->
-    <section>
+    <section class="media-section">
       <h2>Healthy Meal Gallery</h2>
       <p>Here are some of my favorite healthy meals:</p>
-      <img src="images/meal1.jpg" alt="Healthy Meal 1" style="width:300px;">
-      <img src="images/meal2.jpg" alt="Healthy Meal 2" style="width:300px;">
+      <div class="image-gallery">
+        <img src="images/meal1.jpg" alt="Healthy Meal 1">
+        <img src="images/meal2.jpg" alt="Healthy Meal 2">
+      </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
+  <div class="footer-banner"></div>
   <footer>
     <p>&copy; 2025 Marcus. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
