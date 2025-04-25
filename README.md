@@ -10,7 +10,7 @@ A responsive, multi-page personal site built with HTML, CSS, and JavaScript.
 - JavaScript mini-widget: theme toggle (dark/light mode)
 
 ## Screenshots  
-*(Place your screenshots in a `screenshots/` folder and reference them here.)*  
+  
 ![Home](./screenshots/home.png)  
 ![Multimedia](./screenshots/multimedia.png)  
 ![Resources](./screenshots/resources.png)  
