@@ -77,10 +77,40 @@ section { margin: 0 0 30px; }
 }
 
 /* --- Media Sections --- */
+/* --- Media Sections --- */
 .media-section {
-  background: #f0f8ff; padding: 30px;
-  border-radius: 8px; margin-bottom: 30px;
+  display: flex;
+  align-items: stretch;      /* <-- changed from flex-start */
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background: #f0f8ff;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
+
+.media-section .text-block,
+.media-section .image-block,
+.media-section .video-block {
+  flex: 1;
+}
+
+.media-section .image-block img,
+.media-section .video-block video {
+  width: auto;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.media-section .image-block figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
 .video-gallery, .image-gallery {
   display: flex; flex-wrap: wrap;
   justify-content: center; gap: 20px;
@@ -112,3 +142,69 @@ h1, h2 { color: #333; }
 p, ul { color: #444; }
 a { color: #0056b3; }
 a:hover { color: #ff4500; text-decoration: underline; }
+
+.video-text-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;            /* space between text & video */
+  padding: 2rem 1rem;
+}
+
+.video-text-section .text-block {
+  flex: 1;              /* let text take up its share */
+}
+
+.video-text-section .video-block {
+  flex: 1;              /* let video take up its share */
+}
+
+.video-text-section .video-block video {
+  width: 100%;          /* fill its container */
+  max-width: 600px;     /* optional cap on size */
+  border-radius: 8px;   /* soft corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* --- About Section --- */
+.about-section {
+  max-width: 800px;
+  margin: 2rem auto 1rem;
+  text-align: left;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* --- Media Section (two‑column) --- */
+.media-section {
+  display: flex;
+  align-items: stretch;       /* both fill same height */
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.media-section .image-block,
+.media-section .video-block {
+  flex: 1;
+}
+
+.media-section .image-block img,
+.media-section .video-block video {
+  width: auto;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.media-section .image-block figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
