@@ -1,22 +1,26 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marcus's Hobby – Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcus Piper – Developer</title>
+  <meta name="description"
+    content="Marcus Piper’s web development portfolio showcasing projects, skills, and services." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script defer src="chat.js"></script>
 </head>
+
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
-    <h1>Welcome to Marcus’s Hobby Website</h1>
-    <p>Discover my passion for healthy living and explore more!</p>
+    <h1>Marcus Piper – Builder of Digital Solutions</h1>
+    <p>I design and build real-world tools — from responsive websites to SMS apps — using HTML, JavaScript, and AI.</p>
   </header>
-  <div class="top-banner"></div>
 
-  <!-- Navigation -->
+  <!-- NAV -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -25,52 +29,114 @@
     </ul>
   </nav>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <img src="images/hero-banner.jpg" alt="Healthy lifestyle banner">
+  <!-- HERO SECTION SPLIT -->
+  <section class="hero-split">
+    <div class="hero-text-block">
+      <h2 class="lead-question">Do You Own Your Digital Identity?</h2>
+      <p>I help individuals and small teams build affordable, awesome websites and workflows that solve real problems.
+      </p>
+      <a href="#projects" class="hero-cta-button">See What I’ve Built</a>
+    </div>
+    <div class="hero-image-block">
+      <img src="images/hero-banner.jpg" alt="City skyline at sunrise" />
+    </div>
   </section>
 
-  <!-- Main Content -->
-  <main>
+  <!-- VALUE BAR -->
+  <section class="value-bar">
+    <p>Need a website or project built? Let’s make something real — together.</p>
+  </section>
 
-    <!-- 1. About Section: Text only -->
-    <section class="about-section">
-      <h2>About My Hobby</h2>
+  <!-- SCROLL INDICATOR -->
+  <div class="scroll-indicator">
+    <p>↓ Keep scrolling to see how I build real-world tools</p>
+  </div>
+
+  <!-- MAIN BODY -->
+  <main>
+    <h3 class="lead-question">Does your brand have a home on the web?</h3>
+
+    <!-- MISSION -->
+    <section class="mission-section">
+      <h2>Why I Build</h2>
       <p>
-        My hobby is working out and eating healthy. 
-        I’ve been passionate about fitness for years, 
-        and this website is dedicated to sharing 
-        my journey, tips, and inspiration with others.
+        I’m not just learning code — I’m building solutions. Whether it's a landing page or an SMS alert system, I
+        believe everyone deserves a digital footprint. AI and hands-on learning make that possible now.
+      </p>
+      <figure class="image-block">
+        <img src="images/marcus-linkedin-pic.jpg" alt="Marcus Piper, new developer, 2025" class="profile-pic" />
+        <figcaption>This isn’t just a post — it’s the start of something bigger.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+      <h2>About Me</h2>
+      <p>
+        I’m Marcus — a hands-on problem solver learning in public. My focus is helping individuals and small teams
+        launch with confidence. Whether it’s front-end layout, SMS alerts, or AI-based tools, I work with real results
+        in mind.
       </p>
     </section>
-  
-    <!-- 2. Media Section: Image + Video side-by-side -->
-    <section class="media-section">
-      <!-- Image block -->
-      <figure class="image-block">
-        <img src="images/my-photo.jpg" alt="Marcus with his wife">
-        <figcaption>Enjoying a healthy lifestyle together</figcaption>
-      </figure>
-  
-      <!-- Video block -->
-      <div class="video-block">
-        <video autoplay muted loop playsinline>
-          <source src="videos/hobby.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card featured-project">
+        <h3><a href="https://marcuspiperallen.github.io/js-quiz-app/" target="_blank">JavaScript Quiz App</a></h3>
+        <p>A browser quiz using JS and DOM methods. Expanding to include scoreboards and timers.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://marcuspiperallen.github.io/marcus-classes-site/" target="_blank">Marcus Classes Site</a>
+        </h3>
+        <p>A responsive site showing layout, media, and interaction. Built for a course using core HTML/CSS.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://github.com/MarcusPiperAllen/curve-sms-safety-project" target="_blank">Curve SMS Safety
+            App</a></h3>
+        <p>A backend Node.js + Twilio app that sends SMS alerts to subscribed users. In active development.</p>
+      </div>
+
+      <div class="project-card coming-soon">
+        <h3>🚧 UIW Project: Dr. Doshie Piper Personal Brand Site</h3>
+        <p>Site for a UIW professor focused on charity and education. My first full client build.</p>
+      </div>
+
+      <div class="project-footer">
+        <a href="mailto:marcuspiperallen@gmail.com" class="project-cta">Want a site like this? Let's talk.</a>
       </div>
     </section>
-  
   </main>
-  
-  
-  
 
-  <!-- Footer -->
-  <div class="footer-banner"></div>
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Marcus. All rights reserved.</p>
+    <p>&copy; 2025 Marcus Piper</p>
+    <div class="footer-links">
+      <a href="https://github.com/MarcusPiperAllen" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank">LinkedIn</a> |
+      <a href="mailto:marcuspiperallen@gmail.com">Email Me</a>
+    </div>
+    <p class="footer-tagline">Let’s build your digital presence together.</p>
   </footer>
 
+  <!-- Chat Button -->
+  <div class="chatbot-button" onclick="toggleChat()">💬 Chat with Marcus</div>
+
+  <!-- Chatbox -->
+  <div class="chatbox" id="chatbox">
+    <h4>Got a question?</h4>
+    <ul>
+      <li onclick="handleResponse('What’s your background?')">What’s your background?</li>
+      <li onclick="handleResponse('Can you build my website?')">Can you build my website?</li>
+      <li onclick="handleResponse('What tools do you use?')">What tools do you use?</li>
+      <li onclick="handleResponse('Where can I see your projects?')">Where can I see your projects?</li>
+    </ul>
+    <p id="chat-response"></p>
+  </div>
+
 </body>
+
 </html>
