@@ -329,3 +329,25 @@ footer {
     width: 80%;
   }
 }
+/*Before After Css*/
+.before-after-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.before img,
+.after img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#commit-log {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-family: monospace;
+}
