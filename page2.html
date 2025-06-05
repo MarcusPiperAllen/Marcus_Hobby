@@ -40,40 +40,50 @@
     <p>AI is a tool, not a shortcut. It helps with debugging, structuring ideas, and accelerating solutions, but <strong>the thinking, logic, and execution come from me</strong>.</p>
   </section>
 
-  <!-- Section: Project Highlights & Demos -->
-  <section class="media-section">
-    <h2>🛠️ Projects That Taught Me Something</h2>
-    <div class="video-gallery">
-      <iframe src="https://www.youtube.com/embed/yourAppDemo1" title="JavaScript Quiz App Demo" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/yourAppDemo2" title="SMS Safety Alert Demo" allowfullscreen></iframe>
-    </div>
-    <ul>
-      <li><strong>Quote Rotator:</strong> Taught me about <strong>DOM manipulation</strong>.</li>
-      <li><strong>SMS App:</strong> Strengthened my <strong>backend and Twilio API knowledge</strong>.</li>
-      <li><strong>Java Assignments:</strong> Helped refine <strong>typed logic and branching techniques</strong>.</li>
-    </ul>
-  </section>
+  <!-- PATCH HERE: Combined Project + Commit Timeline Section -->
+<section class="media-section">
+  <h2>🛠️ Projects That Taught Me Something</h2>
 
-  <!-- Section: Project Commit Timeline -->
-  <section class="media-section" id="commit-timeline">
-    <h2>🧾 Code Commit Timeline</h2>
-    <p>Each push tells part of the story. These are real, timestamped steps forward—not placeholders.</p>
-    <div id="commit-feed">
-      <!-- commit.js will populate this -->
+  <!-- JavaScript Quiz App with Before/After Toggle -->
+  <div class="project-highlight">
+    <h3>JavaScript Quiz App</h3>
+    <p>A browser quiz using JS and DOM methods. Expanding to include scoreboards and timers.</p>
+    <button onclick="toggleBeforeAfter('js-quiz')">Toggle Before/After</button>
+    <div class="image-toggle" id="js-quiz">
+      <img src="images/js-quiz-before.png" alt="JS Quiz - Before">
     </div>
-  </section>
+  </div>
 
-  <!-- Section: Before & After Snapshots -->
-  <section class="media-section" id="before-after-showcase">
-    <h2>📸 Before & After</h2>
-    <p>This is a visual log of key transformations in design, structure, or interactivity.</p>
-    <div class="comparison-gallery">
-      <!-- Future screenshots can go here -->
-      <!-- Use side-by-side img pairs or toggle slider later -->
+  <!-- Marcus Piper Site with Before/After Toggle -->
+  <div class="project-highlight">
+    <h3>Marcus Piper Site</h3>
+    <p>A responsive site showing layout, media, and interaction. Built for a course using core HTML/CSS.</p>
+    <button onclick="toggleBeforeAfter('site')">Toggle Before/After</button>
+    <div class="image-toggle" id="site">
+      <img src="images/marcus-site-before.png" alt="Site - Before">
     </div>
-  </section>
+  </div>
 
-  <!-- Section: Forward Vision -->
+  <!-- Curve App Keep Commit Feed -->
+  <div class="project-highlight">
+    <h3>Curve SMS Safety App</h3>
+    <p>A backend Node.js + Twilio app that sends SMS alerts to subscribed users. In active development.</p>
+    <div class="commit-feed" id="commit-feed-curve-sms-safety-project"></div>
+  </div>
+</section>
+<<section class="media-section">
+  <h2>🎓 Java School Journey</h2>
+  <p>I’m not just learning from AI—I’m also enrolled in a structured Java course. Here’s what I’ve been building:</p>
+
+  <button onclick="toggleJavaProject()">Next Project</button>
+
+  <div id="java-projects">
+    <img src="images/Module3_1.png" alt="Java Screenshot" class="java-image">
+    <p class="java-caption">Module 3.1 – Reads two integers and outputs their sum, difference, and product.</p>
+  </div>
+</section>
+
+         <!-- Section: Forward Vision -->
   <section class="media-section">
     <h2>🔮 Where It’s Going</h2>
     <p>Right now, I’m brainstorming <strong>an interactive chatbot</strong> that doesn’t just answer questions but <strong>walks users through my dev journey</strong>. 
@@ -87,6 +97,7 @@
   <footer>
     <p>&copy; 2025 Marcus Piper. All rights reserved.</p>
   </footer>
-
+  <script src="toggle.js"></script>
+<script src="commit.js"></script>
 </body>
 </html>
