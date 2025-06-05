@@ -364,3 +364,26 @@ footer {
 .hide {
   display: none;
 }
+.before-after-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.screenshot-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.screenshot-item img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
