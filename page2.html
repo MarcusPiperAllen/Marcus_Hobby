@@ -11,111 +11,201 @@
 
   <!-- Header -->
   <header>
-    <h1>A Builder’s Playground</h1>
-    <p>A space where I experiment, test ideas, break things, and improve as a developer.</p>
-</header>
-  <div class="top-banner"></div>
-
-  <!-- Navigation -->
+  <h1>A Builder’s Playground</h1>
+  <p>A space where I experiment, test ideas, break things, and improve as a developer.</p>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="page2.html">Learning Hub</a></li>
-      <li><a href="page3.html">Resources</a></li>
+      <li><a href="page2.html" class="active">Projects</a></li>
+      <li><a href="page3.html">Media</a></li>
     </ul>
   </nav>
+</header>
 
+  <div class="top-banner"></div>
   <!-- Main Content -->
   <main>
   <!-- Section: Evolution Intro -->
-  <section class="media-section">
+  <section class="hero-split">
+  <div class="hero-text-block">
     <h2>Project Evolution Roadmap</h2>
     <p>Building in public isn’t about showing off—it’s about <strong>learning, refining, and pushing ideas forward</strong>. 
-    Every project teaches something new, whether it's a small JavaScript tweak or troubleshooting API errors.</p>
-  </section>
+    Every project teaches something new, whether it’s a small JavaScript tweak or troubleshooting API errors.</p>
+  </div>
+  <div class="hero-image-block">
+    <img src="images/evolution-visual.jpg" alt="Global digital network connections visualization" />
+    <p class="image-caption">
+  Image by <a href="https://pixabay.com/users/pp76-19157494/" target="_blank" rel="noopener noreferrer">pp76</a> from 
+  <a href="https://pixabay.com/photos/globe-earth-map-global-planet-8704013/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+</p>
+</div>
+</section>
+
+
 
   <!-- Section: AI Use Philosophy -->
-  <section class="media-section">
-    <h2>🧠 How I Learn with AI, Not from AI</h2>
-    <p>AI is a tool, not a shortcut. It helps with debugging, structuring ideas, and accelerating solutions, but <strong>the thinking, logic, and execution come from me</strong>.</p>
-  </section>
-
-  <!-- PATCH HERE: Combined Project + Commit Timeline Section -->
 <section class="media-section">
-  <h2>🛠️ Projects That Taught Me Something</h2>
+  <h2>🧠 How I Learn with AI, Not from AI</h2>
+  <p>AI is a tool — not a shortcut.<br>
+  It helps me break through stuck moments, structure ideas faster, and learn from every mistake.<br>
+  But the thought process, the logic, and the execution — that’s mine. Always.</p>
 
-  <!-- JavaScript Quiz App with Before/After Toggle -->
-  <div class="project-highlight">
+  <p>This site is a record of what we’ve built together:<br>
+  One human. One assistant. One mission.<br>
+  And if you’re here, you’re part of it now.</p>
+</section>
+<!-- SCROLL INDICATOR -->
+  <div class="scroll-indicator">
+    <p>↓ Keep scrolling to see how I build real-world tools</p>
+  </div>  
+
+
+  <section class="media-section">
+  <h2>🛠️ Projects That Taught Me Something</h2>
+<!-- === PROJECT: JavaScript Quiz App === -->
+<section class="hero-split">
+  <!-- LEFT SIDE: TEXT + BUTTONS + COMMITS -->
+  <div class="hero-text-block">
     <h3>JavaScript Quiz App</h3>
-    <p>A browser quiz using JS and DOM methods. Expanding to include scoreboards and timers.</p>
-    <button onclick="toggleBeforeAfter('js-quiz')">Toggle Before/After</button>
-    <div class="image-toggle" id="js-quiz">
-      <img src="images/js-quiz-before.png" alt="JS Quiz - Before">
+    <p>This browser-based quiz tests core logic and DOM interaction. I’m building toward timers, progress bars, and scoreboard features.</p>
+    <p><em>Project focus: DOM manipulation, logic handling, modular JS</em></p>
+
+    <!-- 🌐 View Site Button -->
+    <a class="project-cta" href="https://marcuspiperallen.github.io/js-quiz-app/" target="_blank">🌐 View Site</a>
+
+    <!-- Before/After Buttons -->
+    <div class="before-after-controls" style="margin-top: 1rem;">
+      <button onclick="showNextImage('before')">Before</button>
+      <button onclick="showNextImage('after')">After</button>
     </div>
+
+    <!-- Commit Feed -->
+    <div id="commit-feed-js-quiz-app" class="commit-feed">Loading commits...</div>
   </div>
 
-  <!-- Marcus Piper Site with Before/After Toggle -->
-  <div class="project-highlight">
+  <!-- RIGHT SIDE: IMAGE BLOCK -->
+  <div class="hero-image-block">
+    <div class="image-toggle" id="js-quiz">
+      <img src="images/js-quiz-before1.png" alt="JS Quiz App Screenshot">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- === PROJECT: Rev. Dr. Doshie Piper Site === -->
+<section class="hero-split">
+  <!-- LEFT SIDE: TEXT + BUTTONS + COMMITS -->
+  <div class="hero-text-block">
+    <h3>Rev. Dr. Doshie Piper Site</h3>
+    <p>This site highlights Rev. Dr. Doshie Piper's personal brand, content, and message with a full redesign across five pages using HTML, CSS, and responsive layout techniques.</p>
+    
+    <!-- 🌐 View Site Button -->
+    <a class="project-cta" href="https://marcuspiperallen.github.io/rev-dr-doshie-piper-site/" target="_blank">🌐 View Site</a>
+
+    <!-- Before/After Buttons -->
+    <div class="before-after-controls" style="margin-top: 1rem;">
+      <button onclick="showNextImage('before-sister')">Before</button>
+      <button onclick="showNextImage('after-sister')">After</button>
+    </div>
+
+    <!-- Commit Feed -->
+    <div id="commit-feed-rev-dr-doshie-piper-site" class="commit-feed">Loading commits...</div>
+  </div>
+
+  <!-- RIGHT SIDE: IMAGE BLOCK -->
+  <div class="hero-image-block">
+    <div class="image-toggle" id="sister-site">
+      <img src="screenshots/sister-before-home..png" alt="Home Page Before">
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- === PROJECT: Marcus Piper Site === -->
+<section class="hero-split">
+  <!-- LEFT SIDE: TEXT + BUTTONS + COMMITS -->
+  <div class="hero-text-block">
     <h3>Marcus Piper Site</h3>
     <p>A responsive site showing layout, media, and interaction. Built for a course using core HTML/CSS.</p>
-    <button onclick="toggleBeforeAfter('site')">Toggle Before/After</button>
+
+    <!-- 🌐 View Site Button -->
+    <a class="project-cta" href="https://marcuspiperallen.github.io/marcus-piper-site/" target="_blank">🌐 View Site</a>
+
+    <!-- Before/After Buttons -->
+    <div class="before-after-controls" style="margin-top: 1rem;">
+      <button onclick="showNextImage('before-site')">Before</button>
+      <button onclick="showNextImage('after-site')">After</button>
+    </div>
+
+    <!-- Commit Feed -->
+    <div id="commit-feed-marcus-piper-site" class="commit-feed">Loading commits...</div>
+  </div>
+
+  <!-- RIGHT SIDE: IMAGE BLOCK -->
+  <div class="hero-image-block">
     <div class="image-toggle" id="site">
       <img src="images/marcus-site-before.png" alt="Site - Before">
     </div>
   </div>
+</section>
 
-  <!-- Curve App Keep Commit Feed -->
-  <div class="project-highlight">
+
+  <!-- === PROJECT: Curve SMS Safety App === -->
+<section class="hero-split">
+  <!-- LEFT SIDE: TEXT + BUTTONS + COMMITS -->
+  <div class="hero-text-block">
     <h3>Curve SMS Safety App</h3>
-    <p>A backend Node.js + Twilio app that sends SMS alerts to subscribed users. In active development.</p>
-    <div class="commit-feed" id="commit-feed-curve-sms-safety-project"></div>
-  </div>
-</section>
-<<section class="media-section">
-  <h2>🎓 Java School Journey</h2>
-  <p>I’m not just learning from AI—I’m also enrolled in a structured Java course. Here’s what I’ve been building:</p>
+    <p>This backend-powered app uses <strong>Node.js and Twilio</strong> to send SMS safety alerts to subscribed users. It includes an admin dashboard for manual control and a public opt-in form for user sign-up.</p>
 
-  <button onclick="toggleJavaProject()">Next Project</button>
+    <p>🚧 <em>Currently paused until LLC registration and Twilio credentials are finalized.</em><br>
+    Due to Ngrok limitations, endpoint URLs reset on server restart, which delays permanent deployment. Once the LLC is registered, hosting and production stability will follow.</p>
 
-  <div id="java-projects">
-    <img src="images/Module3_1.png" alt="Java Screenshot" class="java-image">
-    <p class="java-caption">Module 3.1 – Reads two integers and outputs their sum, difference, and product.</p>
-  </div>
-</section>
-<!-- === BEFORE & AFTER: Dr. Doshie Piper Site === -->
-<section id="before-after" class="before-after-section">
-  <h2>Rev. Dr. Doshie Piper Site – Before & After</h2>
-  <p>This project showcases the transformation of Dr. Piper’s website from an early concept to a polished professional brand.</p>
+    <!-- View Site Button (placeholder URL) -->
+    <a class="project-cta" href="https://marcuspiperwebsite.netlify.app" target="_blank">🌐 View Site</a>
 
-  <div class="screenshot-grid">
-    <div class="screenshot-item">
-      <h3>Home Page – Before</h3>
-      <img src="screenshots/sister-before-home..png" alt="Home Page Before">
+    <!-- Before/After Buttons -->
+    <div class="before-after-controls" style="margin-top: 1rem;">
+      <button onclick="showNextImage('before-curve')">Before</button>
+      <button onclick="showNextImage('after-curve')">After</button>
     </div>
-    <div class="screenshot-item">
-      <h3>About Page – Before</h3>
-      <img src="screenshots/sister-before-about.png" alt="About Page Before">
-    </div>
-    <div class="screenshot-item">
-      <h3>Projects Page – Before</h3>
-      <img src="screenshots/sister-before-projects..png" alt="Projects Page Before">
-    </div>
-    <div class="screenshot-item">
-      <h3>Media Page – Before</h3>
-      <img src="screenshots/sister-before-media..png" alt="Media Page Before">
-    </div>
-    <div class="screenshot-item">
-      <h3>Contact Page – Before</h3>
-      <img src="screenshots/sister-before-contact.png" alt="Contact Page Before">
-    </div>
+
+    <!-- Commit Feed -->
+    <div id="commit-feed-curve-sms-safety-project" class="commit-feed">Loading commits...</div>
   </div>
 
-  <p class="note">📌 The "after" images will be added soon once the final polish is complete and screenshots are taken.</p>
+  <!-- RIGHT SIDE: IMAGE BLOCK -->
+  <div class="hero-image-block">
+    <div class="image-toggle" id="curve-app">
+      <img src="images/curve-before-optin.png" alt="Curve App - Opt-In Page">
+      <p class="commit-caption">Opt-in page UI ready for users</p>
+    </div>
+  </div>
 </section>
 
+<section class="hero-split">
+  <!-- Left: Text + Button -->
+  <div class="hero-text-block">
+    <h3>📚 From Class to Real Code</h3>
+    <p>I’m in a hands-on tech program, turning Java (and soon, Python/C++) assignments into real-world experience. This isn’t just homework—it’s practice for building solid, readable, functional apps.</p>
+    <button onclick="toggleJavaProject()">Next Project</button>
+  </div>
 
+  <!-- Right: Visual area, already rotating -->
+  <div class="hero-image-block">
+    <div id="java-projects">
+      <img src="images/Module3_1.png" alt="Java Screenshot" class="java-image">
+      <p class="java-caption">Module 3.1 – Reads two integers and outputs their sum, difference, and product.</p>
+    </div>
+  </div>
+</section>
 
-         <!-- Section: Forward Vision -->
+<!-- Section: Forward Vision -->
   <section class="media-section">
     <h2>🔮 Where It’s Going</h2>
     <p>Right now, I’m brainstorming <strong>an interactive chatbot</strong> that doesn’t just answer questions but <strong>walks users through my dev journey</strong>. 
