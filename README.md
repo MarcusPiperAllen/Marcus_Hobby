@@ -1,10 +1,10 @@
-# Marcus Piper – Developer Portfolio Website
+# Marcus Piper – Web Developer Portfolio
 
 **Live Site**: [https://marcuspiperallen.github.io/Marcus_Hobby/](https://marcuspiperallen.github.io/Marcus_Hobby/)
 
 ## 🔹 Overview
 
-This is my main personal and professional website, built to showcase my web development projects, technical growth, and multimedia capabilities. It features real-world projects like an SMS Safety App, interactive demos, and creative integrations that demonstrate both frontend fundamentals and user engagement strategies.
+This is my professional web developer portfolio, showcasing client work and projects that demonstrate clear structure, reliable functionality, and practical problem-solving. Features include a client website redesign, SMS safety app, and interactive demos built with HTML, CSS, and JavaScript.
 
 ## 🧰 Technologies Used
 
@@ -16,19 +16,19 @@ This is my main personal and professional website, built to showcase my web deve
 
 ## 🚀 Key Features
 
-- 📱 **SMS Safety App (Twilio + Express)**: In development, backend integrated, with live frontend admin dashboard UI
-- 🤖 **Chatbot Widget (in progress)**: Positioned for homepage support and interactive Q&A
-- 🎬 **Original multimedia**: Auto-playing video with captions, styled using custom CSS
-- 🧩 **Creative theme**: Gold header, blue footer, and brand-consistent visuals
-- 🛠️ Clean responsive layout optimized for mobile and desktop
-- 🗂️ Organized into clear sections (Home, Multimedia, Resources)
+- 📱 **Client Project Showcase**: Rev. Dr. Doshie Piper website redesign with before/after visuals
+- 💻 **SMS Safety App (Node.js + Twilio)**: Backend alert system with admin dashboard and user opt-in
+- 🤖 **Interactive Chatbot**: Quick Q&A widget for visitor engagement
+- 🎨 **Professional Design**: Clean, accessible layout with consistent branding
+- 📱 **Fully Responsive**: Optimized for mobile and desktop viewing
+- 🗂️ **Clear Navigation**: Three-page structure (Home, Projects, About)
 
-## 📸 Future Additions
+## 📸 Future Enhancements
 
-- Add project cards for GitHub-hosted builds
-- Mobile navigation improvements
-- Chatbot integration for project Q&A
-- Job-ready contact + resume section
+- Additional client case studies with detailed project breakdowns
+- Enhanced chatbot with project-specific Q&A
+- Contact form integration
+- Performance optimization and SEO improvements
 
 ## 📄 Getting Started
 
