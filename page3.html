@@ -8,6 +8,30 @@
   <title>About – Marcus Piper, Web Developer</title>
   <meta name="description"
     content="Learn more about web developer Marcus Piper, his approach to clear, reliable websites, and how he works with clients.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/page3.html" />
+  <meta property="og:title" content="About – Marcus Piper, Web Developer" />
+  <meta property="og:description" content="Learn more about web developer Marcus Piper, his approach to clear, reliable websites, and how he works with clients." />
+  <meta property="og:image" content="https://marcuspiperallen.github.io/Marcus_Hobby/images/hero-banner.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/page3.html" />
+  <meta property="twitter:title" content="About – Marcus Piper, Web Developer" />
+  <meta property="twitter:description" content="Learn more about web developer Marcus Piper, his approach to clear, reliable websites, and how he works with clients." />
+  <meta property="twitter:image" content="https://marcuspiperallen.github.io/Marcus_Hobby/images/hero-banner.jpg" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
@@ -85,8 +109,27 @@
     <section class="about-section">
       <h2>Let's Talk</h2>
       <p>If you need a site that actually reflects who you are and how you work, take a look at my <a
-          href="page2.html">projects</a> or just <a href="mailto:marcuspiperallen@gmail.com">send me an email</a> — I'm
+          href="page2.html">projects</a> or fill out the form below — I'm
         happy to talk through what you're trying to build.</p>
+
+      <form action="https://formspree.io/f/xanyqawy" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
     </section>
 
   </main>
