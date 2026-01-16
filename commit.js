@@ -1,26 +1,11 @@
 const projects = [
   {
-    repo: "js-quiz-app",
-    elementId: "commit-feed-js-quiz-app",
-    displayName: "JavaScript Quiz App"
-  },
-  {
-    repo: "marcus-piper-site",
-    elementId: "commit-feed-marcus-piper-site",
-    displayName: "Marcus Piper Site"
-  },
-  {
-    repo: "curve-sms-safety-project",
-    elementId: "commit-feed-curve-sms-safety-project",
-    displayName: "Curve SMS Safety App"
-  },
-  {
-  repo: "rev-dr-doshie-piper-site",
-  elementId: "commit-feed-rev-dr-doshie-piper-site",
-  displayName: "Rev. Dr. Doshie Piper Site"
-}
-
+    repo: "rev-dr-doshie-piper-site",
+    elementId: "commit-feed-rev-dr-doshie-piper-site",
+    displayName: "Rev. Dr. Doshie Piper Site"
+  }
 ];
+
 
 const username = "MarcusPiperAllen"; // Your GitHub username
 
