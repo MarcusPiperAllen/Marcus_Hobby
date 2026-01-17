@@ -172,6 +172,56 @@ nav ul li a.active {
   border-color: transparent;
 }
 
+/* === HERO BANNER - SKYLINE WITH GLASSMORPHISM === */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--glass-border);
+}
+
+.hero-banner-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.6),
+    0 0 40px rgba(6, 182, 212, 0.3);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 200px;
+  }
+  
+  .hero-banner-badge {
+    font-size: 1.2rem;
+  }
+}
+
 /* === HERO SECTION - CENTERED POWER HEADLINE === */
 .hero-split {
   display: flex;
@@ -468,12 +518,13 @@ nav ul li a.active {
   justify-content: space-between;
 }
 
-/* Hover Lift Animation */
+/* Hover Lift Animation - Enhanced with Scale */
 .bento-tile:hover {
-  transform: translateY(-12px);
+  transform: translateY(-12px) scale(1.02);
   border-color: var(--accent-primary);
-  box-shadow: 0 20px 60px rgba(6, 182, 212, 0.4),
-    0 0 80px rgba(6, 182, 212, 0.15);
+  box-shadow: 0 25px 70px rgba(6, 182, 212, 0.5),
+    0 0 100px rgba(6, 182, 212, 0.25),
+    0 0 150px rgba(6, 182, 212, 0.1);
 }
 
 /* Shimmer Effect on Hover */
@@ -999,36 +1050,54 @@ footer {
 
 .chatbox h4 {
   margin: 0 0 1rem;
-  font-size: 1.2rem;
-  color: var(--accent-primary);
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
-.chatbox ul {
-  list-style: none;
-  padding: 0;
+.chat-email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.chatbox ul li {
-  background: rgba(255, 255, 255, 0.05);
+.chat-email-form input {
   padding: 0.75rem;
-  margin-bottom: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  border: 1px solid transparent;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all var(--transition-normal);
 }
 
-.chatbox ul li:hover {
-  background: rgba(6, 182, 212, 0.2);
+.chat-email-form input:focus {
+  outline: none;
   border-color: var(--accent-primary);
-  transform: translateX(5px);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+}
+
+.chat-email-form button {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.chat-email-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4);
 }
 
 #chat-response {
   margin-top: 1rem;
   font-style: italic;
-  color: var(--text-secondary);
+  color: var(--accent-secondary);
   line-height: 1.6;
 }
 

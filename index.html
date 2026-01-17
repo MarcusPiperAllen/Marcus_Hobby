@@ -59,11 +59,16 @@
 
 
 
+  <!-- HERO BANNER - SKYLINE WITH GLASSMORPHISM -->
+  <section class="hero-banner">
+    <img src="images/hero-banner.jpg" alt="Virginia Skyline at Sunset" class="hero-banner-image" />
+    <div class="hero-banner-overlay">
+      <span class="hero-banner-badge">Virginia-Based Developer</span>
+    </div>
+  </section>
+
   <!-- HERO SECTION - CENTERED POWER HEADLINE -->
   <section class="hero-split">
-    <div class="hero-image-block">
-      <img src="images/marcus-linkedin-pic.jpg" alt="Marcus Piper, Web Developer" />
-    </div>
     <p class="hero-title-caption">Marcus Piper — Web Developer and Builder of Practical Tools</p>
     <div class="hero-text-block">
       <h2>I Transform Ideas Into Premium Digital Experiences</h2>
@@ -127,13 +132,6 @@
           </div>
         </div>
 
-        <!-- Small Tile: Virginia-Based Developer -->
-        <div class="bento-tile bento-tile-small">
-          <div class="bento-tile-content">
-            <img src="images/hero-banner.jpg" alt="Virginia Skyline at Sunset" class="bento-tile-image" />
-            <h3>Virginia-Based Developer</h3>
-          </div>
-        </div>
       </div>
 
       <div class="project-footer">
@@ -159,13 +157,11 @@
 
   <!-- Chatbox -->
   <div class="chatbox" id="chatbox">
-    <h4>Got a question?</h4>
-    <ul id="chat-options">
-      <li data-question="What's your background?">What's your background?</li>
-      <li data-question="Can you build my website?">Can you build my website?</li>
-      <li data-question="What tools do you use?">What tools do you use?</li>
-      <li data-question="Where can I see your projects?">Where can I see your projects?</li>
-    </ul>
+    <h4>Hey! I'm currently heads-down building, but drop your email and I'll get back to you.</h4>
+    <form action="https://formspree.io/f/xanyqawy" method="POST" class="chat-email-form">
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button type="submit">Send</button>
+    </form>
     <p id="chat-response"></p>
   </div>
   <script src="commit.js?v=1.1"></script>
