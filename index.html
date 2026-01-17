@@ -144,14 +144,15 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Marcus Piper</p>
+    <p>&copy; <span id="current-year"></span> Marcus Piper</p>
     <div class="footer-links">
-      <a href="https://github.com/MarcusPiperAllen" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/MarcusPiperAllen" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank">LinkedIn</a>
       <a href="mailto:marcuspiperallen@gmail.com">Email Me</a>
     </div>
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
   <!-- Chat Button -->
   <button class="chatbot-button" id="chatbot-button">Chat with Marcus</button>
