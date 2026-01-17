@@ -1306,6 +1306,227 @@ footer {
   margin: 0 auto;
 }
 
+/* === ABOUT PAGE - BENTO TIMELINE HYBRID === */
+
+/* Profile Photo with Pulse Glow */
+.profile-hero {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+}
+
+.profile-photo-container {
+  position: relative;
+}
+
+.profile-photo-pulse {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.5),
+    0 0 60px rgba(6, 182, 212, 0.3),
+    0 0 90px rgba(6, 182, 212, 0.1);
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.5),
+      0 0 60px rgba(6, 182, 212, 0.3),
+      0 0 90px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(6, 182, 212, 0.7),
+      0 0 80px rgba(6, 182, 212, 0.5),
+      0 0 120px rgba(6, 182, 212, 0.2);
+  }
+}
+
+/* About Bento Grid */
+.about-bento {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-xl);
+}
+
+.about-bento-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.about-tile {
+  padding: var(--spacing-lg);
+}
+
+.about-tile h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.about-tile p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about-tile p:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent-secondary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0.35rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+@media (max-width: 900px) {
+  .about-bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Journey Section with Banner */
+.journey-section {
+  position: relative;
+  padding: var(--spacing-xl) 0;
+  margin-top: var(--spacing-lg);
+}
+
+.journey-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.journey-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journey-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.journey-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.journey-content h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Vertical Timeline */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: var(--radius-full);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -40px;
+  top: 1.5rem;
+  width: 24px;
+  height: 24px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: 4px solid var(--bg-primary);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+  z-index: 2;
+}
+
+.timeline-content {
+  padding: var(--spacing-md);
+}
+
+.timeline-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-company {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent-secondary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* About Contact Section */
+.about-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: center;
+}
+
+.about-contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.about-contact > p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
 /* === FIGURE STYLING === */
 figure.image-block {
   text-align: center;
