@@ -175,6 +175,19 @@
             document.getElementById('form-success').style.display = 'block';
           });
         });
+
+        // Flash the name input if coming from Chat button
+        if (sessionStorage.getItem('flashForm') === 'true') {
+          sessionStorage.removeItem('flashForm');
+          setTimeout(() => {
+            const nameInput = document.getElementById('name');
+            if (nameInput) {
+              nameInput.classList.add('input-flash');
+              nameInput.focus();
+              setTimeout(() => nameInput.classList.remove('input-flash'), 1000);
+            }
+          }, 500);
+        }
       </script>
     </section>
 
@@ -190,6 +203,9 @@
     </div>
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
+
+  <!-- Chat Button - Scrolls to Contact Form -->
+  <a href="#contact-form" class="chatbot-button" onclick="setTimeout(() => { const n = document.getElementById('name'); if(n) { n.classList.add('input-flash'); n.focus(); setTimeout(() => n.classList.remove('input-flash'), 1000); } }, 300);">Chat with Marcus</a>
 
 </body>
 

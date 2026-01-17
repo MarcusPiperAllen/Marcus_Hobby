@@ -119,6 +119,10 @@
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+  <!-- Chat Button - Scrolls to Contact Form -->
+  <a href="/about#contact-form" class="chatbot-button" onclick="sessionStorage.setItem('flashForm', 'true');">Chat with Marcus</a>
+
   <script>
     document.querySelectorAll('.hover-video-container').forEach(container => {
       const video = container.querySelector('.hover-video');
