@@ -290,6 +290,19 @@ nav ul li a.active {
   border-color: var(--accent-secondary);
 }
 
+/* === HERO TITLE CAPTION === */
+.hero-title-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.5),
+    0 0 40px rgba(6, 182, 212, 0.3);
+  letter-spacing: 0.5px;
+}
+
 /* === VALUE BAR === */
 .value-bar {
   background: var(--glass-bg);
@@ -408,6 +421,34 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Small Tile - Virginia Developer (Spans 4 columns, 1 row) */
+.bento-tile-small {
+  grid-column: span 4;
+  grid-row: span 1;
+  min-height: 200px;
+  text-align: center;
+}
+
+.bento-tile-small .bento-tile-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  border: 2px solid var(--glass-border);
+}
+
+.bento-tile-small h3 {
+  font-size: 1.1rem;
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .bento-tile-small {
+    grid-column: span 1;
+  }
 }
 
 /* Bento Tile Base Styling */
