@@ -120,8 +120,17 @@
   </footer>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
-  <!-- Chat Button - Scrolls to Contact Form -->
-  <a href="/about#contact-form" class="chatbot-button" onclick="sessionStorage.setItem('flashForm', 'true');">Chat with Marcus</a>
+  <!-- Smart Interaction Card -->
+  <button class="chatbot-button" id="chatbot-button" onclick="document.getElementById('smart-card').classList.toggle('active');">Chat with Marcus</button>
+  
+  <div class="smart-card" id="smart-card">
+    <p class="smart-card-greeting">Hey! I'm Marcus. I'm currently building digital solutions in Virginia. What's on your mind?</p>
+    <div class="smart-card-actions">
+      <a href="/projects" class="smart-card-link">🚀 See My Projects</a>
+      <a href="/about" class="smart-card-link">👨‍💻 My Journey</a>
+      <a href="/about#contact-form" class="smart-card-link" onclick="sessionStorage.setItem('flashForm', 'true');">✉️ Message Me</a>
+    </div>
+  </div>
 
   <script>
     document.querySelectorAll('.hover-video-container').forEach(container => {

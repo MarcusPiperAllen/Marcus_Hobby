@@ -204,8 +204,17 @@
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
 
-  <!-- Chat Button - Scrolls to Contact Form -->
-  <a href="#contact-form" class="chatbot-button" onclick="setTimeout(() => { const n = document.getElementById('name'); if(n) { n.classList.add('input-flash'); n.focus(); setTimeout(() => n.classList.remove('input-flash'), 1000); } }, 300);">Chat with Marcus</a>
+  <!-- Smart Interaction Card -->
+  <button class="chatbot-button" id="chatbot-button" onclick="document.getElementById('smart-card').classList.toggle('active');">Chat with Marcus</button>
+  
+  <div class="smart-card" id="smart-card">
+    <p class="smart-card-greeting">Hey! I'm Marcus. I'm currently building digital solutions in Virginia. What's on your mind?</p>
+    <div class="smart-card-actions">
+      <a href="/projects" class="smart-card-link">🚀 See My Projects</a>
+      <a href="#contact-form" class="smart-card-link" onclick="document.getElementById('smart-card').classList.remove('active');">👨‍💻 My Journey</a>
+      <a href="#contact-form" class="smart-card-link" onclick="document.getElementById('smart-card').classList.remove('active'); setTimeout(() => { const n = document.getElementById('name'); if(n) { n.classList.add('input-flash'); n.focus(); setTimeout(() => n.classList.remove('input-flash'), 1000); } }, 300);">✉️ Message Me</a>
+    </div>
+  </div>
 
 </body>
 
