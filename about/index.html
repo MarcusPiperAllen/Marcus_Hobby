@@ -1,4 +1,4 @@
-<!-- about.html -->
+<!-- about/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +11,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/page3.html" />
+  <meta property="og:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/about/" />
   <meta property="og:title" content="About – Marcus Piper, Web Developer" />
   <meta property="og:description"
     content="Learn more about web developer Marcus Piper, his journey, philosophy, and approach to building practical digital solutions." />
@@ -19,7 +19,7 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/page3.html" />
+  <meta property="twitter:url" content="https://marcuspiperallen.github.io/Marcus_Hobby/about/" />
   <meta property="twitter:title" content="About – Marcus Piper, Web Developer" />
   <meta property="twitter:description"
     content="Learn more about web developer Marcus Piper, his journey, philosophy, and approach to building practical digital solutions." />
@@ -36,7 +36,7 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 
-  <link rel="stylesheet" href="style.css?v=1.1" />
+  <link rel="stylesheet" href="../style.css?v=1.1" />
 </head>
 
 <body>
@@ -48,8 +48,8 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/about" class="active">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/" class="active">About</a></li>
       </ul>
     </nav>
   </header>
@@ -62,7 +62,7 @@
     <!-- Profile Photo with Pulse Glow -->
     <section class="profile-hero">
       <div class="profile-photo-container">
-        <img src="images/marcus-linkedin-pic.jpg" alt="Marcus Piper" class="profile-photo-pulse" />
+        <img src="../images/marcus-linkedin-pic.jpg" alt="Marcus Piper" class="profile-photo-pulse" />
       </div>
     </section>
 
@@ -91,7 +91,7 @@
     <!-- Journey Section with Background Banner -->
     <section class="journey-section">
       <div class="journey-banner">
-        <img src="images/hero-banner.jpg" alt="Virginia Skyline" class="journey-banner-image" />
+        <img src="../images/hero-banner.jpg" alt="Virginia Skyline" class="journey-banner-image" />
         <div class="journey-banner-overlay"></div>
       </div>
       
@@ -210,7 +210,7 @@
   <div class="smart-card" id="smart-card">
     <p class="smart-card-greeting">Hey! I'm Marcus. I'm currently building digital solutions in Virginia. What's on your mind?</p>
     <div class="smart-card-actions">
-      <a href="/projects" class="smart-card-link">🚀 See My Projects</a>
+      <a href="/projects/" class="smart-card-link">🚀 See My Projects</a>
       <a href="#contact-form" class="smart-card-link" onclick="document.getElementById('smart-card').classList.remove('active');">👨‍💻 My Journey</a>
       <a href="#contact-form" class="smart-card-link" onclick="document.getElementById('smart-card').classList.remove('active'); setTimeout(() => { const n = document.getElementById('name'); if(n) { n.classList.add('input-flash'); n.focus(); setTimeout(() => n.classList.remove('input-flash'), 1000); } }, 300);">✉️ Message Me</a>
     </div>
