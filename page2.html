@@ -65,8 +65,10 @@
 
       <!-- PROJECT 1: Rev. Dr. Doshie Piper -->
       <div class="solution-card glass-card">
-        <div class="solution-image">
-          <img src="images/piper-site-final.jpg.png" alt="Rev. Dr. Doshie Piper Website" />
+        <div class="solution-video hover-video-container">
+          <video class="hover-video" muted loop playsinline poster="images/piper-site-final.jpg.png">
+            <source src="videos/piper-preview.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="solution-content">
           <h3>Rev. Dr. Doshie Piper</h3>
@@ -78,8 +80,10 @@
 
       <!-- PROJECT 2: Netta McGee Creations -->
       <div class="solution-card glass-card">
-        <div class="solution-image">
-          <img src="images/mcgee-site-final.jpg.png" alt="Netta McGee Creations E-commerce" />
+        <div class="solution-video hover-video-container">
+          <video class="hover-video" muted loop playsinline poster="images/mcgee-site-final.jpg.png">
+            <source src="videos/mcgee-preview.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="solution-content">
           <h3>Netta McGee Creations</h3>
@@ -115,6 +119,18 @@
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('.hover-video-container').forEach(container => {
+      const video = container.querySelector('.hover-video');
+      container.addEventListener('mouseenter', () => {
+        video.play();
+      });
+      container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  </script>
 
 </body>
 

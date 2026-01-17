@@ -611,6 +611,21 @@ nav ul li a.active {
   transform: translateX(3px);
 }
 
+/* Bento Tile Video */
+.bento-tile-video {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bento-tile-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--accent-primary);
+}
+
 /* Value Statement Tile Styling */
 .bento-value-statement {
   background: linear-gradient(135deg,
@@ -1170,20 +1185,31 @@ footer {
   transform: translateY(-5px);
 }
 
-.solution-image {
+.solution-image,
+.solution-video {
   overflow: hidden;
-  border-radius: var(--radius-md);
+  border-radius: 12px;
 }
 
-.solution-image img {
+.solution-image img,
+.solution-video video {
   width: 100%;
   height: auto;
-  border-radius: var(--radius-md);
+  border-radius: 12px;
+  border: 1px solid var(--accent-primary);
   transition: transform var(--transition-normal);
 }
 
-.solution-card:hover .solution-image img {
+.solution-card:hover .solution-image img,
+.solution-card:hover .solution-video video {
   transform: scale(1.02);
+}
+
+.hover-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .solution-content h3 {

@@ -102,7 +102,12 @@
 
       <div class="bento-grid">
         <!-- Large Tile: Rev. Dr. Doshie Piper (Featured) -->
-        <div class="bento-tile bento-tile-large">
+        <div class="bento-tile bento-tile-large hover-video-container">
+          <div class="bento-tile-video">
+            <video class="hover-video" muted loop playsinline poster="images/piper-site-final.jpg.png">
+              <source src="videos/piper-preview.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="bento-tile-content">
             <h3><a href="https://marcuspiperallen.github.io/rev-dr-doshie-piper-site/" target="_blank">Rev. Dr. Doshie
                 Piper</a></h3>
@@ -114,7 +119,12 @@
         </div>
 
         <!-- Medium Tile: Netta McGee Creations -->
-        <div class="bento-tile bento-tile-medium">
+        <div class="bento-tile bento-tile-medium hover-video-container">
+          <div class="bento-tile-video">
+            <video class="hover-video" muted loop playsinline poster="images/mcgee-site-final.jpg.png">
+              <source src="videos/mcgee-preview.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="bento-tile-content">
             <h3><a href="https://netta-mcgee-creations.netlify.app/#product-grid" target="_blank">Netta McGee
                 Creations</a></h3>
@@ -166,6 +176,18 @@
   </div>
   <script src="commit.js?v=1.1"></script>
   <script src="chat.js?v=1.1"></script>
+  <script>
+    document.querySelectorAll('.hover-video-container').forEach(container => {
+      const video = container.querySelector('.hover-video');
+      container.addEventListener('mouseenter', () => {
+        video.play();
+      });
+      container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  </script>
 </body>
 
 </html>
