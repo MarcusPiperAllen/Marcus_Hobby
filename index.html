@@ -104,7 +104,7 @@
         <!-- Large Tile: Rev. Dr. Doshie Piper (Featured) -->
         <div class="bento-tile bento-tile-large hover-video-container">
           <div class="bento-tile-video">
-            <video class="hover-video" muted loop playsinline poster="images/piper-site-final.jpg.png">
+            <video class="hover-video" muted loop playsinline preload="auto" poster="images/piper-site-final.jpg.png">
               <source src="videos/piper-preview.mp4" type="video/mp4">
             </video>
           </div>
@@ -121,7 +121,7 @@
         <!-- Medium Tile: Netta McGee Creations -->
         <div class="bento-tile bento-tile-medium hover-video-container">
           <div class="bento-tile-video">
-            <video class="hover-video" muted loop playsinline poster="images/mcgee-site-final.jpg.png">
+            <video class="hover-video" muted loop playsinline preload="auto" poster="images/mcgee-site-final.jpg.png">
               <source src="videos/mcgee-preview.mp4" type="video/mp4">
             </video>
           </div>
@@ -179,6 +179,7 @@
   <script>
     document.querySelectorAll('.hover-video-container').forEach(container => {
       const video = container.querySelector('.hover-video');
+      video.playbackRate = 1.25;
       container.addEventListener('mouseenter', () => {
         video.play();
       });
