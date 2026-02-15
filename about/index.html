@@ -149,7 +149,7 @@
     <section class="about-contact" id="contact-form">
       <h2>Let's Build Something Together</h2>
       <p>Ready to discuss your project? Reach out and let's talk about how I can help.</p>
-      <form action="https://formspree.io/f/xjgewzkp" method="POST" class="contact-form">
+      <form id="contact-form-main" action="https://formspree.io/f/xjgewzkp" method="POST" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -159,11 +159,65 @@
           <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
+          <label for="phone">Phone Number (Optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="submit-button">Send Message</button>
+        <button type="submit" class="submit-button" id="submit-btn">Send Message</button>
       </form>
+      <div id="form-success" class="form-message form-success-message" style="display: none;">
+        <p>✅ Thanks! Your message was sent.</p>
+      </div>
+      <div id="form-error" class="form-message form-error-message" style="display: none;">
+        <p>⚠️ Something went wrong. Please try again.</p>
+      </div>
+      <script>
+        document.getElementById('contact-form-main').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const form = this;
+          const submitBtn = document.getElementById('submit-btn');
+          const successMsg = document.getElementById('form-success');
+          const errorMsg = document.getElementById('form-error');
+
+          // Disable submit button
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+
+          // Hide previous messages
+          successMsg.style.display = 'none';
+          errorMsg.style.display = 'none';
+
+          // Submit form data
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          })
+            .then(response => {
+              if (response.ok) {
+                // Success
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+                form.reset();
+              } else {
+                // Error
+                errorMsg.style.display = 'block';
+              }
+            })
+            .catch(error => {
+              // Network error
+              errorMsg.style.display = 'block';
+            })
+            .finally(() => {
+              // Re-enable submit button
+              submitBtn.disabled = false;
+              submitBtn.textContent = 'Send Message';
+            });
+        });
+      </script>
     </section>
 
   </main>
@@ -174,7 +228,7 @@
     <div class="footer-links">
       <a href="https://github.com/MarcusPiperAllen" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank">LinkedIn</a>
-      <a href="mailto:marcuspiperallen@gmail.com">Email Me</a>
+      <a href="#contact-form">Contact Me</a>
     </div>
     <p class="footer-tagline">Let's build a site that clearly explains who you are and how to work with you.</p>
   </footer>
@@ -190,8 +244,8 @@
       <a href="../projects/" class="smart-card-link">🚀 See My Projects</a>
       <a href="#contact-form" class="smart-card-link"
         onclick="document.getElementById('smart-card').classList.remove('active');">👨‍💻 My Journey</a>
-      <a href="mailto:marcuspiperallen@gmail.com?subject=Website%20Inquiry&body=Name%3A%20%0ABusiness%3A%20%0APhone%3A%20%0ADetails%3A%20"
-        class="smart-card-link">✉️ Message Me</a>
+      <a href="#contact-form" class="smart-card-link"
+        onclick="document.getElementById('smart-card').classList.remove('active');">✉️ Message Me</a>
     </div>
   </div>
 
